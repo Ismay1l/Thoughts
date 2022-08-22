@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B229C7F28B107BB00CFFB0C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4B229C7E28B107BB00CFFB0C /* FirebaseAuth */; };
-		4B229C8128B107BB00CFFB0C /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 4B229C8028B107BB00CFFB0C /* FirebaseDatabase */; };
-		4B229C8328B107BB00CFFB0C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4B229C8228B107BB00CFFB0C /* FirebaseFirestore */; };
-		4B229C8528B107BB00CFFB0C /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4B229C8428B107BB00CFFB0C /* FirebaseStorage */; };
 		4B229C8728B1094100CFFB0C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B229C8628B1094100CFFB0C /* GoogleService-Info.plist */; };
+		4B40614828B404F7000DB2A0 /* PayWallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B40614728B404F7000DB2A0 /* PayWallViewController.swift */; };
+		4B40614A28B40B95000DB2A0 /* PayWallHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B40614928B40B95000DB2A0 /* PayWallHeaderView.swift */; };
+		4B40614D28B40C0E000DB2A0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4B40614C28B40C0E000DB2A0 /* SnapKit */; };
+		4B40615028B40D31000DB2A0 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B40614F28B40D31000DB2A0 /* View+Extension.swift */; };
+		4B40615228B413D1000DB2A0 /* PayWallDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B40615128B413D1000DB2A0 /* PayWallDescriptionView.swift */; };
 		4BE1060928ACF95E00D28B1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE1060828ACF95E00D28B1A /* AppDelegate.swift */; };
 		4BE1060B28ACF95E00D28B1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE1060A28ACF95E00D28B1A /* SceneDelegate.swift */; };
 		4BE1060D28ACF95E00D28B1A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE1060C28ACF95E00D28B1A /* HomeViewController.swift */; };
@@ -27,13 +28,18 @@
 		4BE1065028ACFE4D00D28B1A /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE1064F28ACFE4D00D28B1A /* DatabaseManager.swift */; };
 		4BE1065228ACFE6100D28B1A /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE1065128ACFE6100D28B1A /* AuthManager.swift */; };
 		4BE1065428ACFE7700D28B1A /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE1065328ACFE7700D28B1A /* StorageManager.swift */; };
-		4BE5199928B2315000A057C0 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 4BE5199828B2315000A057C0 /* RevenueCat */; };
 		4BE5199B28B2367A00A057C0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE5199A28B2367A00A057C0 /* User.swift */; };
 		4BE5199D28B2368B00A057C0 /* BlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE5199C28B2368B00A057C0 /* BlogPost.swift */; };
+		8EA3F36027682FFE4F15D3C7 /* Pods_Thoughts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3064BBE445EE33E746C88AE /* Pods_Thoughts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D6B07885E10DA99D637ABAC /* Pods-Thoughts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thoughts.debug.xcconfig"; path = "Target Support Files/Pods-Thoughts/Pods-Thoughts.debug.xcconfig"; sourceTree = "<group>"; };
 		4B229C8628B1094100CFFB0C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4B40614728B404F7000DB2A0 /* PayWallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallViewController.swift; sourceTree = "<group>"; };
+		4B40614928B40B95000DB2A0 /* PayWallHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallHeaderView.swift; sourceTree = "<group>"; };
+		4B40614F28B40D31000DB2A0 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		4B40615128B413D1000DB2A0 /* PayWallDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallDescriptionView.swift; sourceTree = "<group>"; };
 		4BE1060528ACF95E00D28B1A /* Thoughts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thoughts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BE1060828ACF95E00D28B1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BE1060A28ACF95E00D28B1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +59,8 @@
 		4BE1065328ACFE7700D28B1A /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		4BE5199A28B2367A00A057C0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4BE5199C28B2368B00A057C0 /* BlogPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPost.swift; sourceTree = "<group>"; };
+		5E0F2A7A33628993C39F589A /* Pods-Thoughts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thoughts.release.xcconfig"; path = "Target Support Files/Pods-Thoughts/Pods-Thoughts.release.xcconfig"; sourceTree = "<group>"; };
+		A3064BBE445EE33E746C88AE /* Pods_Thoughts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thoughts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,22 +68,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B229C8128B107BB00CFFB0C /* FirebaseDatabase in Frameworks */,
-				4B229C8528B107BB00CFFB0C /* FirebaseStorage in Frameworks */,
-				4BE5199928B2315000A057C0 /* RevenueCat in Frameworks */,
-				4B229C7F28B107BB00CFFB0C /* FirebaseAuth in Frameworks */,
-				4B229C8328B107BB00CFFB0C /* FirebaseFirestore in Frameworks */,
+				8EA3F36027682FFE4F15D3C7 /* Pods_Thoughts.framework in Frameworks */,
+				4B40614D28B40C0E000DB2A0 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B40614628B403A3000DB2A0 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				4B40614728B404F7000DB2A0 /* PayWallViewController.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		4B40614E28B40D1F000DB2A0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4B40614F28B40D31000DB2A0 /* View+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		4BE105FC28ACF95E00D28B1A = {
 			isa = PBXGroup;
 			children = (
 				4BE1060728ACF95E00D28B1A /* Thoughts */,
 				4BE1060628ACF95E00D28B1A /* Products */,
+				C2BA2B9B2B877FB57F15C7D1 /* Pods */,
+				ECC69629B30946B37349540D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +113,7 @@
 		4BE1060728ACF95E00D28B1A /* Thoughts */ = {
 			isa = PBXGroup;
 			children = (
+				4B40614E28B40D1F000DB2A0 /* Extensions */,
 				4BE1063E28ACFC9400D28B1A /* Controllers */,
 				4BE1064028ACFCA300D28B1A /* Managers */,
 				4BE1063C28ACFC7500D28B1A /* Models */,
@@ -113,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				4BE1061328ACF95F00D28B1A /* LaunchScreen.storyboard */,
+				4B40614928B40B95000DB2A0 /* PayWallHeaderView.swift */,
+				4B40615128B413D1000DB2A0 /* PayWallDescriptionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -120,6 +146,7 @@
 		4BE1063E28ACFC9400D28B1A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4B40614628B403A3000DB2A0 /* Other */,
 				4BE1065728AD074C00D28B1A /* Core Tabs */,
 				4BE1065828AD075D00D28B1A /* Auth Tabs */,
 				4BE1065928AD076800D28B1A /* Posts Tabs */,
@@ -177,6 +204,23 @@
 			path = "Posts Tabs";
 			sourceTree = "<group>";
 		};
+		C2BA2B9B2B877FB57F15C7D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D6B07885E10DA99D637ABAC /* Pods-Thoughts.debug.xcconfig */,
+				5E0F2A7A33628993C39F589A /* Pods-Thoughts.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		ECC69629B30946B37349540D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3064BBE445EE33E746C88AE /* Pods_Thoughts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -184,9 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BE1061928ACF95F00D28B1A /* Build configuration list for PBXNativeTarget "Thoughts" */;
 			buildPhases = (
+				1F1738D107CBB7098DA5A795 /* [CP] Check Pods Manifest.lock */,
 				4BE1060128ACF95E00D28B1A /* Sources */,
 				4BE1060228ACF95E00D28B1A /* Frameworks */,
 				4BE1060328ACF95E00D28B1A /* Resources */,
+				C3DB80AFDA170896FDAADAEF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -194,11 +240,7 @@
 			);
 			name = Thoughts;
 			packageProductDependencies = (
-				4B229C7E28B107BB00CFFB0C /* FirebaseAuth */,
-				4B229C8028B107BB00CFFB0C /* FirebaseDatabase */,
-				4B229C8228B107BB00CFFB0C /* FirebaseFirestore */,
-				4B229C8428B107BB00CFFB0C /* FirebaseStorage */,
-				4BE5199828B2315000A057C0 /* RevenueCat */,
+				4B40614C28B40C0E000DB2A0 /* SnapKit */,
 			);
 			productName = Thoughts;
 			productReference = 4BE1060528ACF95E00D28B1A /* Thoughts.app */;
@@ -229,8 +271,7 @@
 			);
 			mainGroup = 4BE105FC28ACF95E00D28B1A;
 			packageReferences = (
-				4B229C7D28B107BB00CFFB0C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				4BE5199728B2315000A057C0 /* XCRemoteSwiftPackageReference "purchases-ios" */,
+				4B40614B28B40C0E000DB2A0 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 4BE1060628ACF95E00D28B1A /* Products */;
 			projectDirPath = "";
@@ -254,16 +295,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F1738D107CBB7098DA5A795 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Thoughts-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3DB80AFDA170896FDAADAEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Thoughts/Pods-Thoughts-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Thoughts/Pods-Thoughts-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Thoughts/Pods-Thoughts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4BE1060128ACF95E00D28B1A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4BE5199D28B2368B00A057C0 /* BlogPost.swift in Sources */,
+				4B40615228B413D1000DB2A0 /* PayWallDescriptionView.swift in Sources */,
 				4BE1060D28ACF95E00D28B1A /* HomeViewController.swift in Sources */,
 				4BE1065228ACFE6100D28B1A /* AuthManager.swift in Sources */,
 				4BE1064828ACFDDF00D28B1A /* SignUpViewController.swift in Sources */,
 				4BE1060928ACF95E00D28B1A /* AppDelegate.swift in Sources */,
+				4B40614A28B40B95000DB2A0 /* PayWallHeaderView.swift in Sources */,
 				4BE1064628ACFDD200D28B1A /* SignInViewController.swift in Sources */,
 				4BE1064228ACFD4000D28B1A /* ProfileViewController.swift in Sources */,
 				4BE5199B28B2367A00A057C0 /* User.swift in Sources */,
@@ -274,6 +359,8 @@
 				4BE1064A28ACFDEE00D28B1A /* ViewPostViewController.swift in Sources */,
 				4BE1065028ACFE4D00D28B1A /* DatabaseManager.swift in Sources */,
 				4BE1065428ACFE7700D28B1A /* StorageManager.swift in Sources */,
+				4B40615028B40D31000DB2A0 /* View+Extension.swift in Sources */,
+				4B40614828B404F7000DB2A0 /* PayWallViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +494,7 @@
 		};
 		4BE1061A28ACF95F00D28B1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D6B07885E10DA99D637ABAC /* Pods-Thoughts.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -436,6 +524,7 @@
 		};
 		4BE1061B28ACF95F00D28B1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E0F2A7A33628993C39F589A /* Pods-Thoughts.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -487,49 +576,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4B229C7D28B107BB00CFFB0C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		4B40614B28B40C0E000DB2A0 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
-				branch = master;
+				branch = develop;
 				kind = branch;
-			};
-		};
-		4BE5199728B2315000A057C0 /* XCRemoteSwiftPackageReference "purchases-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/RevenueCat/purchases-ios.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4B229C7E28B107BB00CFFB0C /* FirebaseAuth */ = {
+		4B40614C28B40C0E000DB2A0 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4B229C7D28B107BB00CFFB0C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		4B229C8028B107BB00CFFB0C /* FirebaseDatabase */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4B229C7D28B107BB00CFFB0C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseDatabase;
-		};
-		4B229C8228B107BB00CFFB0C /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4B229C7D28B107BB00CFFB0C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
-		};
-		4B229C8428B107BB00CFFB0C /* FirebaseStorage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4B229C7D28B107BB00CFFB0C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseStorage;
-		};
-		4BE5199828B2315000A057C0 /* RevenueCat */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4BE5199728B2315000A057C0 /* XCRemoteSwiftPackageReference "purchases-ios" */;
-			productName = RevenueCat;
+			package = 4B40614B28B40C0E000DB2A0 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
