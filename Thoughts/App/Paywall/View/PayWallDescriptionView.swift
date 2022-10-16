@@ -16,6 +16,7 @@ class PayWallDescriptionView: UIView {
         label.textAlignment = .center
         label.numberOfLines = 0
         label.text = "Join Thoughts Premium to read unlimited articles!"
+        label.textColor = .white
         return label
     }()
     
@@ -25,6 +26,7 @@ class PayWallDescriptionView: UIView {
         label.textAlignment = .center
         label.numberOfLines = 1
         label.text = "$4.99 / month"
+        label.textColor = .white
         return label
     }()
     
@@ -51,16 +53,14 @@ class PayWallDescriptionView: UIView {
         
         descriptorLabel.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(20)
-            make.top.equalToSuperview()
-            make.width.equalTo(width - 40)
-            make.height.equalTo(height/2)
+            make.top.equalToSuperview().offset(40)
+            make.right.equalToSuperview().offset(-20)
         }
         
         priceLabel.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(20)
             make.top.equalTo(descriptorLabel.snp.bottom).offset(20)
-            make.width.equalTo(width - 40)
-            make.height.equalTo(height/2)
+            make.right.equalToSuperview().offset(-20)
         }
     }
 }

@@ -11,14 +11,16 @@ class PayWallVC: UIViewController {
     
     //MARK: - Variables
     private let headerView = PayWallHeaderView()
+    private let descriptionVIew = PayWallDescriptionView()
     
     //MARK: - UI Elements
-    private lazy var buyButton: UIButton = {
+    private lazy var subscribeButton: UIButton = {
         let button = UIButton()
         button.setTitle("Subscribe", for: .normal)
         button.setTitleColor(UIColor.white, for: .normal)
         button.backgroundColor = .systemBlue
         button.layer.cornerRadius = 8
+        button.addTarget(self, action: #selector(didTapClose(_:)), for: .touchUpInside)
         button.layer.masksToBounds = true
         return button
     }()
@@ -28,6 +30,7 @@ class PayWallVC: UIViewController {
         button.setTitle("Restore Purchases", for: .normal)
         button.setTitleColor(UIColor.link, for: .normal)
         button.layer.cornerRadius = 8
+        button.addTarget(self, action: #selector(didTapClose(_:)), for: .touchUpInside)
         button.layer.masksToBounds = true
         return button
     }()
@@ -57,21 +60,34 @@ class PayWallVC: UIViewController {
     //MARK: - Functions
     private func configureConstraints() {
         view.addSubview(headerView)
-        view.addSubview(buyButton)
+        view.addSubview(descriptionVIew)
+        view.addSubview(subscribeButton)
         view.addSubview(restoreButton)
         view.addSubview(termsView)
         
+        let top = view.safeAreaLayoutGuide.snp.top
+        let left = view.safeAreaLayoutGuide.snp.left
+        let right = view.safeAreaLayoutGuide.snp.right
+        let bottom = view.safeAreaLayoutGuide.snp.bottom
+        
         headerView.snp.makeConstraints { make in
-            make.left.equalToSuperview()
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+            make.left.equalTo(left)
+            make.top.equalTo(top)
             make.width.equalTo(view.width)
             make.height.equalTo(view.height / 3.2)
         }
         
+        descriptionVIew.snp.makeConstraints { make in
+            make.left.equalTo(left)
+            make.right.equalTo(right)
+            make.top.equalTo(headerView.snp.bottom)
+            make.bottom.equalTo(subscribeButton.snp.top)
+        }
+        
         termsView.snp.makeConstraints { make in
-            make.left.equalToSuperview().offset(5)
-            make.right.equalToSuperview().offset(-5)
-            make.bottom.equalToSuperview().offset(-10)
+            make.left.equalTo(left).offset(5)
+            make.right.equalTo(right).offset(-5)
+            make.bottom.equalTo(bottom).offset(-10)
             make.height.equalTo(100)
         }
         
@@ -80,7 +96,7 @@ class PayWallVC: UIViewController {
             make.bottom.equalTo(termsView.snp.top).offset(-20)
         }
         
-        buyButton.snp.makeConstraints { make in
+        subscribeButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.bottom.equalTo(restoreButton.snp.top).offset(-10)
             make.width.equalTo(view.width - 50)

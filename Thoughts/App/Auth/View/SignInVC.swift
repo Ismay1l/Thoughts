@@ -21,7 +21,7 @@ class SignInVC: UITabBarController {
     //MARK: - Functions
     private func showPremiumVC() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            if !APIManager.shared.isPremium() {
+            if !IAPManager.shared.isPremium() {
                 let vc = PayWallVC()
                 let navVC = UINavigationController(rootViewController: vc)
                 self.present(navVC, animated: true)

@@ -6,11 +6,10 @@
 //
 
 import Foundation
-//import RevenueCat
 
-final class APIManager {
+final class IAPManager {
     
-    static let shared = APIManager()
+    static let shared = IAPManager()
     private init() {}
     
     //MARK: - Checking premium user
