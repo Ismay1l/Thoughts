@@ -10,25 +10,9 @@ import UIKit
 class PayWallDescriptionView: UIView {
     
     //MARK: - UI Elements
-    private lazy var descriptorLabel: UILabel = {
-        let label = UILabel()
-        label.font = .systemFont(ofSize: 22, weight: .medium)
-        label.textAlignment = .center
-        label.numberOfLines = 0
-        label.text = "Join Thoughts Premium to read unlimited articles!"
-        label.textColor = .white
-        return label
-    }()
+    private lazy var descriptorLabel = createLabel(size: 22, weight: .medium, alignment: .center, numberOfLInes: 0, text: "Join Thoughts Premium to read unlimited articles!", textColor: .white)
     
-    private lazy var priceLabel: UILabel = {
-        let label = UILabel()
-        label.font = .systemFont(ofSize: 18, weight: .thin)
-        label.textAlignment = .center
-        label.numberOfLines = 1
-        label.text = "$4.99 / month"
-        label.textColor = .white
-        return label
-    }()
+    private lazy var priceLabel = createLabel(size: 18, weight: .thin, alignment: .center, numberOfLInes: 1, text: "$4.99 / month", textColor: .white)
     
     //MARK: - Parent Delegate
     override init(frame: CGRect) {

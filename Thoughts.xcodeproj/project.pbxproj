@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B090CA728FC7D4A00134DF4 /* SignInHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B090CA628FC7D4A00134DF4 /* SignInHeaderView.swift */; };
+		4B090CAA28FC7DCA00134DF4 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B090CA928FC7DCA00134DF4 /* Functions.swift */; };
+		4B090CAC28FC825F00134DF4 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B090CAB28FC825F00134DF4 /* UITextField.swift */; };
 		4B229C8728B1094100CFFB0C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B229C8628B1094100CFFB0C /* GoogleService-Info.plist */; };
 		4B40614828B404F7000DB2A0 /* PayWallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B40614728B404F7000DB2A0 /* PayWallVC.swift */; };
 		4B40614A28B40B95000DB2A0 /* PayWallHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B40614928B40B95000DB2A0 /* PayWallHeaderView.swift */; };
@@ -35,6 +38,9 @@
 
 /* Begin PBXFileReference section */
 		2D6B07885E10DA99D637ABAC /* Pods-Thoughts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thoughts.debug.xcconfig"; path = "Target Support Files/Pods-Thoughts/Pods-Thoughts.debug.xcconfig"; sourceTree = "<group>"; };
+		4B090CA628FC7D4A00134DF4 /* SignInHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInHeaderView.swift; sourceTree = "<group>"; };
+		4B090CA928FC7DCA00134DF4 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		4B090CAB28FC825F00134DF4 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		4B229C8628B1094100CFFB0C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4B40614728B404F7000DB2A0 /* PayWallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallVC.swift; sourceTree = "<group>"; };
 		4B40614928B40B95000DB2A0 /* PayWallHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallHeaderView.swift; sourceTree = "<group>"; };
@@ -107,6 +113,7 @@
 		4B090C8828FC6EAC00134DF4 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				4B090CA828FC7DBF00134DF4 /* General */,
 				4B090C8A28FC6EBD00134DF4 /* Enums */,
 				4B090C8928FC6EB700134DF4 /* Protocols */,
 				4B40614E28B40D1F000DB2A0 /* Extensions */,
@@ -234,6 +241,7 @@
 			children = (
 				4BE1064528ACFDD200D28B1A /* SignInVC.swift */,
 				4BE1064728ACFDDF00D28B1A /* SignUpVC.swift */,
+				4B090CA628FC7D4A00134DF4 /* SignInHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -339,10 +347,19 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		4B090CA828FC7DBF00134DF4 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				4B090CA928FC7DCA00134DF4 /* Functions.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
 		4B40614E28B40D1F000DB2A0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				4B40614F28B40D31000DB2A0 /* UIView.swift */,
+				4B090CAB28FC825F00134DF4 /* UITextField.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -529,12 +546,14 @@
 				4BE5199D28B2368B00A057C0 /* BlogPost.swift in Sources */,
 				4B40615228B413D1000DB2A0 /* PayWallDescriptionView.swift in Sources */,
 				4BE1060D28ACF95E00D28B1A /* HomeVC.swift in Sources */,
+				4B090CAC28FC825F00134DF4 /* UITextField.swift in Sources */,
 				4BE1065228ACFE6100D28B1A /* AuthManager.swift in Sources */,
 				4BE1064828ACFDDF00D28B1A /* SignUpVC.swift in Sources */,
 				4BE1060928ACF95E00D28B1A /* AppDelegate.swift in Sources */,
 				4B40614A28B40B95000DB2A0 /* PayWallHeaderView.swift in Sources */,
 				4BE1064628ACFDD200D28B1A /* SignInVC.swift in Sources */,
 				4BE1064228ACFD4000D28B1A /* ProfileVC.swift in Sources */,
+				4B090CA728FC7D4A00134DF4 /* SignInHeaderView.swift in Sources */,
 				4BE5199B28B2367A00A057C0 /* User.swift in Sources */,
 				4BE1064C28ACFDFD00D28B1A /* CreateNewPostVC.swift in Sources */,
 				4BE1064E28ACFE3000D28B1A /* IAPManager.swift in Sources */,
@@ -542,6 +561,7 @@
 				4BE1060B28ACF95E00D28B1A /* SceneDelegate.swift in Sources */,
 				4BE1064A28ACFDEE00D28B1A /* ViewPostVC.swift in Sources */,
 				4BE1065028ACFE4D00D28B1A /* DatabaseManager.swift in Sources */,
+				4B090CAA28FC7DCA00134DF4 /* Functions.swift in Sources */,
 				4BE1065428ACFE7700D28B1A /* StorageManager.swift in Sources */,
 				4B40615028B40D31000DB2A0 /* UIView.swift in Sources */,
 				4B40614828B404F7000DB2A0 /* PayWallVC.swift in Sources */,
